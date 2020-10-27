@@ -8,6 +8,7 @@ HTX - Flask projekt
   <meta charset="utf-8">
 
   <title>Flask Projekt</title>
+  
   <meta name="description" content="Flask Projekt">
 
   <link rel="stylesheet" href="css/style.css">
