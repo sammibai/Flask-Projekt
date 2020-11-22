@@ -1,21 +1,10 @@
 # Flask-Projekt
-HTX - Flask projekt
+from flask import Flask
+app = Flask(__name__)
 
-<!doctype html>
+@app.route('/')
+def hello_world():
+    return "Hello World"
 
-<html>
-<head>
-  <meta charset="utf-8">
-
-  <title>Flask Projekt</title>
-  
-  <meta name="description" content="Flask Projekt">
-
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-  <script src="js/main.js"></script>
-</body>
-</html>
+if __name__ == '__main__':
+    app.run()
