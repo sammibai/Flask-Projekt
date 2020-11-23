@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>FlaskBlog</title>
-</head>
-<body>
-   <h1>Welcome to FlaskBlog</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clicker</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/></link>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+  </head>
+  <body>
+    <div class='box' id="bg">
+    </div>
+    <div class="btns">
+      <button name="2x Point" id="btn1">2x Point!</button>
+    </div>
+    <div class="footer">
+      <img src="images/Footer2.png" id="footer2">
+      <img src="images/footer3.png" id="footer3">
+    </div>
+     <div id="sound">
+       <audio src="sounds/wow.mp3" id=wow>
+       <audio src="sounds/sugoi.mp3" id="sugoi">
+       </audio>
+     </div>
+    <div id="img_container">
+       <img src="images/Pic1.jpg" id="img1" class='Anime'>
+       <img src="images/Pic2.jpg" id="img2" class='Anime'>
+       <img src="images/Pic3.png" id="img3" class='Anime'>
+       <img src="images/Pic4.jpg" id="img4" class='Anime'>
+       <img src="images/Pic5.png" id="img5" class='Anime'>
+       <img src="images/Pic6.jpg" id="img6" class='Anime'>
+       <img src="images/Pic7.jpg" id="img7" class='Anime'>
+       <img src="images/Pic8.jpg" id="img8" class='Anime'>
+       <img src="images/Pic9.jpg" id="img9" class='Anime'>
+       <img src="images/Pic10.jpg" id="img10" class='Anime'>
+    </div>
+    <div id="donate">
+       <img src="images/paypal.jpg" id="paypal">
+    </div>
+    <div id="footer-girl"></div>
+    <div id="score">0</div>
+    <div class="text-box" id="text0">
+      <p>Wow!</p>
+    </div>
+    <div class="text-box" id="text1">
+      <p>You're on fire!</p>
+    </div>
+    <div class="text-box" id="text2">
+      <p>Nani!</p>
+    </div>
+    <div class="text-box" id="text3">
+      <p>You really like anime!</p>
+    </div>
+    <div class="text-box" id="text4">
+      <p>Did you know theres a secret here somewhere?</p>
+    </div>
+    <div class="More">
+      <img src="images/More.png">
+    </div>
+     <div class="music" id="pon">
+       <audio autoplay loop>
+         <source src="sounds/pon.mp3">
+       </audio>
+     </div>
+    <script src="js/jquery-3.2.1.min.js"/></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
