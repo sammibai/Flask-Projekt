@@ -1,0 +1,105 @@
+body {
+  overflow: hidden;
+}
+.box {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#bg {
+  background-color: pink;
+  position: absolute;
+  z-index: -1;
+}
+
+#img_container{
+  position: absolute;
+  top:200px;
+  left:0;
+  right:0;
+}
+
+#donate{
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+#img_container > img {
+  width:300px;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+}
+
+#donate > img {
+  width:250px;
+  height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+}
+
+#score {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 80px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  user-select: none;
+}
+
+#footer-girl {
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: 176px !important;
+}
+
+.text-box{
+  position: absolute;
+  left:1900px;
+  font-size:100px;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+}
+
+#btn1 {
+  bottom: 210px;
+  left: 130px;
+  position: absolute;
+  user-select: none;
+}
+
+#footer2 {
+  bottom: 0px;
+  right: 130px;
+  position: absolute;
+  user-select: none;
+}
+
+#footer3 {
+  bottom: 0px;
+  right: 600px;
+  position: absolute;
+  user-select: none;
+}
+
+.More {
+  height:50px;
+  width:50px;
+  top: -150px;
+  right: 800px;
+  position: absolute;
+  user-select: none;
+}
