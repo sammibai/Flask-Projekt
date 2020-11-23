@@ -1,0 +1,119 @@
+$('#pon').hide();
+$('#img2').hide();
+$('#img3').hide();
+$('#img4').hide();
+$('#img5').hide();
+$('#img6').hide();
+$('#img7').hide();
+$('#img8').hide();
+$('#img9').hide();
+$('#img10').hide();
+
+$('#img1').click ( () => {
+  $('#img1').hide();
+  $('#img2').show();
+})
+
+$('#img2').click ( () => {
+  $('#img2').hide();
+  $('#img3').show();
+})
+
+$('#img3').click ( () => {
+  $('#img3').hide();
+  $('#img4').show();
+})
+
+$('#img4').click ( () => {
+  $('#img4').hide();
+  $('#img5').show();
+})
+
+$('#img5').click ( () => {
+  $('#img5').hide();
+  $('#img6').show();
+})
+
+$('#img6').click ( () => {
+  $('#img6').hide();
+  $('#img7').show();
+})
+
+$('#img7').click ( () => {
+  $('#img7').hide();
+  $('#img8').show();
+})
+
+$('#img8').click ( () => {
+  $('#img8').hide();
+  $('#img9').show();
+})
+
+$('#img9').click ( () => {
+  $('#img9').hide();
+  $('#img10').show();
+})
+
+$('#img10').click ( () => {
+  $('#img10').hide();
+  $('#img1').show();
+})
+
+$('#btn1').click ( () => {
+  $('#btn1').hide();
+  step = 2;
+  if(score%2 == 1) score++; 
+})
+
+$('#donate').click ( () => {
+  window.open('https://www.paypal.com/pools/c/81mS6dpSxI')
+  $('#wow').get(0).play()
+})
+
+function flyingText(){
+  var texts = $('.text-box').length
+  var rand = Math.floor(Math.random() * texts)
+  var id = '#text' + rand;
+  var travel_length = window.innerWidth + 1900;
+
+  var rand_top = Math.random()*window.innerHeight;
+  $(id).css('top', rand_top);
+  $(id).animate({
+    left : '-=' + (travel_length + 1900)
+  }, 10000, () => {
+    $(id).css('left', travel_length);
+  })
+}
+
+var score = 0;
+let step = 1;
+var size = 300;
+$('.Anime').click( () => {
+  score = score + step;
+  $('#score').text(score)
+  if(score%100 == 0){
+    size += 10;
+    $('#img_container > img').css('width', (size+'px'))
+    $('#wow').get(0).play()
+    flyingText();
+  }
+})
+
+$('.Anime').click( () => {
+  if(score%1000 == 0){
+    size += 25;
+    $('#img_container > img').css('width', (size+'px'))
+    $('#wow').get(0).play()
+  }
+})
+
+$('.Anime').click( () => {
+  if(score%250 == 0){
+    $('#sugoi').get(0).play()
+  }
+})
+
+$( "#footer-girl" ).draggable();
+setTimeout(() => {
+  alert('Hello and welcome to my anime game. This game is all about loving anime, The only thing u need to do is click on the pictures and enjoy ur stay!')
+},1000)
